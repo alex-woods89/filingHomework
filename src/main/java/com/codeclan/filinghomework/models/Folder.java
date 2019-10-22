@@ -19,7 +19,7 @@ public class Folder {
     @Column(name = "title")
     private String title;
 
-//    @JsonIgnoreProperties(value = "folder")
+    @JsonIgnoreProperties(value = "folder")
     @OneToMany(mappedBy = "folder")
     private List<File> files;
 
